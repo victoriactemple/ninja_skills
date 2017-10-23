@@ -5,10 +5,25 @@ a = true
 # 2. Create a variable b and set it equal to false
 b = false
 # 3.  Write a statement using a and b that evaluates to false
-    a === b 
+   puts  a === b 
 #       puts the result to the terminal
 # 4. Write a statement using a and b that evaluates to true
     a != b 
-
-
+    puts a != b
 #       puts the result to the terminal
+
+
+
+# ---------------------------------------------------
+
+# Challenge 2: Nil
+
+# 1 Create a variable of your choosing and set it equal to Nil
+my_nil_variable = nil
+# p the value of the variable to the terminal
+puts my_nil_variable
+# puts the value of the variable to the terminal concatenate the string "nil was here".
+puts "#{my_nil_variable} + nil was here"
+# print the value of the variable to the terminal
+print my_nil_variable
+# puts the class of the value of the variable to the terminal. Use the .class method. Look up this method on Google.
