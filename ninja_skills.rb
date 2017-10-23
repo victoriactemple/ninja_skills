@@ -27,3 +27,5 @@ puts "#{my_nil_variable} + nil was here"
 # print the value of the variable to the terminal
 print my_nil_variable
 # puts the class of the value of the variable to the terminal. Use the .class method. Look up this method on Google.
+    puts nil.class
+
