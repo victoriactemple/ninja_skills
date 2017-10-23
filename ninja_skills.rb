@@ -103,21 +103,46 @@
 
 # 1. Create a variable myFirstArray and set it equal to an empty array
 
-my_first_array  = []
-# 2. Set the variable myFirstArray to an array with five Strings and four Integers
-my_first_array = ["tacos", "stirfry", "pasta", "chili", "martinis", 2, 3, 5, 8]
-# 3. Using myFirstArray puts the last value of the array to the terminal
-puts my_first_array.last
-# 4. Using myFirstArray puts the first value of the array to the terminal
-puts my_first_array.first
-# 5.  Set the second value of myFirstArray to the String "Joe"
-my_first_array[1] = "Joe"
-# 6. Set the third value of myFirstArray to the Integer 3
-my_first_array[2] = 3
+# my_first_array  = []
+# # 2. Set the variable myFirstArray to an array with five Strings and four Integers
+# my_first_array = ["tacos", "stirfry", "pasta", "chili", "martinis", 2, 3, 5, 8]
+# # 3. Using myFirstArray puts the last value of the array to the terminal
+# puts my_first_array.last
+# # 4. Using myFirstArray puts the first value of the array to the terminal
+# puts my_first_array.first
+# # 5.  Set the second value of myFirstArray to the String "Joe"
+# my_first_array[1] = "Joe"
+# # 6. Set the third value of myFirstArray to the Integer 3
+# my_first_array[2] = 3
 
-# 7. Push the String Boolean true into myFirstArray
-my_first_array.push(true)
-# puts my_first_array
-# 8. Puts the class of the fourth value in myFirstArray
-puts my_first_array.class
-# 🎯 Commit -m "6. Arrays skills"
+# # 7. Push the String Boolean true into myFirstArray
+# my_first_array.push(true)
+# # puts my_first_array
+# # 8. Puts the class of the fourth value in myFirstArray
+# puts my_first_array.class
+# # 🎯 Commit -m "6. Arrays skills"
+
+
+# Challenge 7: Hashes
+
+# 1. Create a variable called myFavoriteAnimals and set it equal to a Hash with five animals. The animal name as the keys and the species as the values. You must include one animal with a name of "Edgar" and the value "Donkey"
+
+my_favorite_animals = {
+    Edgar: "Donkey",
+    Felix: "Fox",
+    Kennedy: "Cat",
+    Everlast: "Fish",
+    Penelope: "Pig"
+}
+# puts my_favorite_animals
+# 2. Change value of Edgar to be "Bear"
+
+my_favorite_animals[:Edgar] = "Bear"
+
+#  puts my_favorite_animals
+# 3. Create a variable favoriteMovie and set it equal to a new, empty Hash.
+favorite_movie = {}
+# 4. Edit the favoriteMovie hash and add a movie key with a value of your choosing.
+favorite_movie[:numberOne] = "Gosford Park"
+puts favorite_movie
+# 🎯 Commit -m "7. Hashes skills"
