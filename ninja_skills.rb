@@ -76,24 +76,48 @@
 
 # 1.Create a small program that asks the user to input an Integer and multiplies the number by two.
 
-puts "Pick a number: "
-user_input = gets.chomp.to_i
-    product = user_input * 2
-    puts product
+# puts "Pick a number: "
+# user_input = gets.chomp.to_i
+#     product = user_input * 2
+#     puts product
 
    
 
-# 2. Create a small program that does the following
+# # 2. Create a small program that does the following
 
-#   Asks the user for their name
-#   Asks the user what they like to do
-#   Prints out the user's name and what they like to do in a sentence.
+# #   Asks the user for their name
+# #   Asks the user what they like to do
+# #   Prints out the user's name and what they like to do in a sentence.
 
-puts "What is your name? "
-user_name = gets.chomp
-puts "What do you like to do for fun?"
-    user_hobby = gets.chomp
-print " #{user_name} likes to #{user_hobby} for fun"
+# puts "What is your name? "
+# user_name = gets.chomp
+# puts "What do you like to do for fun?"
+#     user_hobby = gets.chomp
+# print " #{user_name} likes to #{user_hobby} for fun"
 
 
-# 🎯 Commit -m "5. Input/Output skills"
+# # 🎯 Commit -m "5. Input/Output skills"
+
+
+# Challenge 6: Arrays
+
+# 1. Create a variable myFirstArray and set it equal to an empty array
+
+my_first_array  = []
+# 2. Set the variable myFirstArray to an array with five Strings and four Integers
+my_first_array = ["tacos", "stirfry", "pasta", "chili", "martinis", 2, 3, 5, 8]
+# 3. Using myFirstArray puts the last value of the array to the terminal
+puts my_first_array.last
+# 4. Using myFirstArray puts the first value of the array to the terminal
+puts my_first_array.first
+# 5.  Set the second value of myFirstArray to the String "Joe"
+my_first_array[1] = "Joe"
+# 6. Set the third value of myFirstArray to the Integer 3
+my_first_array[2] = 3
+
+# 7. Push the String Boolean true into myFirstArray
+my_first_array.push(true)
+# puts my_first_array
+# 8. Puts the class of the fourth value in myFirstArray
+puts my_first_array.class
+# 🎯 Commit -m "6. Arrays skills"
