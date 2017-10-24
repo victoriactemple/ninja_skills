@@ -127,22 +127,79 @@
 
 # 1. Create a variable called myFavoriteAnimals and set it equal to a Hash with five animals. The animal name as the keys and the species as the values. You must include one animal with a name of "Edgar" and the value "Donkey"
 
-my_favorite_animals = {
-    Edgar: "Donkey",
-    Felix: "Fox",
-    Kennedy: "Cat",
-    Everlast: "Fish",
-    Penelope: "Pig"
-}
-# puts my_favorite_animals
-# 2. Change value of Edgar to be "Bear"
+# my_favorite_animals = {
+#     Edgar: "Donkey",
+#     Felix: "Fox",
+#     Kennedy: "Cat",
+#     Everlast: "Fish",
+#     Penelope: "Pig"
+# }
+# # puts my_favorite_animals
+# # 2. Change value of Edgar to be "Bear"
 
-my_favorite_animals[:Edgar] = "Bear"
+# my_favorite_animals[:Edgar] = "Bear"
 
-#  puts my_favorite_animals
-# 3. Create a variable favoriteMovie and set it equal to a new, empty Hash.
-favorite_movie = {}
-# 4. Edit the favoriteMovie hash and add a movie key with a value of your choosing.
-favorite_movie[:numberOne] = "Gosford Park"
-puts favorite_movie
-# 🎯 Commit -m "7. Hashes skills"
+# #  puts my_favorite_animals
+# # 3. Create a variable favoriteMovie and set it equal to a new, empty Hash.
+# favorite_movie = {}
+# # 4. Edit the favoriteMovie hash and add a movie key with a value of your choosing.
+# favorite_movie[:numberOne] = "Gosford Park"
+# puts favorite_movie
+# # 🎯 Commit -m "7. Hashes skills"
+
+
+# Challenge 8: Ranges
+
+# 1. Create a variable firstRange and set it equal to a Range from one to ten including ten.
+first_range = (1..10)
+puts first_range
+# 2. Convert firstRange to an array.
+first_range.to_a
+puts first_range
+# 3. Create a variable secondRange and set it equal to a Range from one to one thousand excluding the Number one thousand.
+second_range = (1..999)
+# 4. Convert secondRange to an array
+second_array = second_range.to_a
+# 5. Create a For loop that changes every value in firstRange to a String and using a p statement print those values out to the terminal
+array_first = first_range.to_a
+for num in array_first do
+    puts num.to_s
+end     
+
+# 6. Create a variable x and set it equal to zero
+# Create a While loop that prints every value in secondRange while x < 50.
+x = 0
+while x < 50 do 
+    puts second_array[x]
+    x += 1
+end
+
+# 7. Using .each multiply every other value in firstRange by two and push those values into a new Array. Print that array to the terminal.
+
+new_array = []
+array_first.each do |index|
+    if index.odd? == true 
+    new_array.push(index * 2)
+    end
+end
+puts new_array
+
+
+# 8. Using .map and if/else statements, iterate through firstRange and change every even value to a string. If the value is odd, don't change the value to a string.
+
+even = array_first.map do |index|
+    if index.even? == true 
+        puts index.to_s
+    end       
+end 
+# puts even
+
+# 🎯 Commit -m "8. I'm a Ninja Warrior. Bow down to me."
+
+
+
+# Challenge 9: Sum of Natural Numbers
+
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000 using Ruby.
